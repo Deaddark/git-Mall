@@ -10,9 +10,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        ShopProcessor shopProcessor = new ShopProcessor();
-        for (int i=0;i<30;i++) {
-            shopProcessor.printShopGoods(i);
-        }
+
     }}
 

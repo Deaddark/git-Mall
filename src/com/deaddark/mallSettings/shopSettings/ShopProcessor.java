@@ -3,7 +3,6 @@ package com.deaddark.mallSettings.shopSettings;
 import com.deaddark.mallSettings.BaseMall;
 import com.deaddark.mallSettings.shopSettings.goodsSettings.BaseGood;
 
-import static java.lang.Math.*;
 
 /**
  * Created by Ilya on 05.07.2016.
