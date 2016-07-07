@@ -11,7 +11,7 @@ public class BaseMall {
     int mallSize;
     public static ArrayList<BaseShop> shops = new ArrayList<>();
 public  BaseMall(int mallSize){
-
+    this.mallSize = mallSize;
     for (int i=0;i<mallSize;i++) {
         shops.add(new BaseShop());
     }

@@ -2,6 +2,7 @@ package com.deaddark.mallSettings.shopSettings;
 
 
 
+import com.deaddark.mallSettings.BaseMall;
 import com.deaddark.mallSettings.shopSettings.goodsSettings.BaseGood;
 
 import java.util.ArrayList;
@@ -13,16 +14,22 @@ public class BaseShop {
     private String typeList[]={  "CLOTHIER_SHOP",
             "COMPUTER_SHOP",
             "FOOD_SHOP",
-            "JEWELRY_SHOP",};
+            "JEWELRY_SHOP"};
     private String type;
     ArrayList<BaseGood> list = new ArrayList<>();
 
      int getGoodQ() {
-        return goodQ;
+
+         return goodQ;
     }
 
     private int goodQ;
-    int baseGoodQ;
+
+    public int getBaseGoodQ() {
+        return baseGoodQ;
+    }
+
+    private int baseGoodQ;
     public void sellG(){                                // Каждый магазин может продать
 
     }
@@ -38,4 +45,13 @@ public class BaseShop {
         baseGoodQ= (int)(Math.random()*50);      //Инициализируем базовое число товаров
         buyG();
     }
-}
+    //public static void  printShopGoods(int shopID){
+     //   final BaseShop baseShop = BaseMall.shops.get(shopID);
+     //   System.out.println("Shop n"+(shopID+1));
+     //   for (int i=0;i<baseShop.baseGoodQ-baseShop.getGoodQ();i++) {    //Перебираем количество имеющегося товара
+     //       final BaseGood baseGood =baseShop.list.get(i);    // Создаём ссылку на вызываемый из списка товар
+     //       System.out.format(baseGood.getName()+" price:"+"%.2f%n",baseGood.getPrice());   //Вывод имени, номера и цены товара
+
+        }
+
+
