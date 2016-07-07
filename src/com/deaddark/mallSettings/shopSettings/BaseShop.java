@@ -17,6 +17,10 @@ public class BaseShop {
     String type;
     ArrayList<BaseGood> list = new ArrayList<BaseGood>();
 
+    public int getGoodQ() {
+        return goodQ;
+    }
+
     private int goodQ;
     int baseGoodQ;
     public void sellG(){                                // Каждый магазин может продать
