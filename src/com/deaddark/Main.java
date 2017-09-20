@@ -10,7 +10,18 @@ public class Main {
 
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         ShopProcessor processor = new ShopProcessor();
         processor.printShopGoods(0);
+=======
+<<<<<<< HEAD
+
+=======
+        ShopProcessor shopProcessor = new ShopProcessor();
+        for (int i=0;i<30;i++) {
+            shopProcessor.printShopGoods(i);
+        }
+>>>>>>> fe51d6c... Initial commit
+>>>>>>> master
     }}
 
