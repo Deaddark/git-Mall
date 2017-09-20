@@ -10,6 +10,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-
+        ShopProcessor processor = new ShopProcessor();
+        processor.printShopGoods(0);
     }}
 
